@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+}
+.box {
+    margin: 50px auto;
+    width: 1000px;
+    height: 280px;
+}
+.box .link {
+    width: 205px;
+    height: 100%;
+    float: left;
+    margin: 0 20px;
+    position: relative;
+}
+.box .icon {
+    display: inline-block;
+    height: 190px;
+    width: 205px;
+    transition: 0.2s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+}
+.box .link-miss .icon {
+    background: url(mission.png) no-repeat center center;
+}
+.box .link-play .icon {
+    background: url(play.png) no-repeat center center;
+}
+.box .link-touch .icon {
+    background: url(touch.png) no-repeat center center;
+}
+.box .icon:hover {
+    transform: rotate(360deg) scale(1.2);
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+    -ms-transform: rotate(360deg) scale(1.2);
+    -o-transform: rotate(360deg) scale(1.2);
+}
+.box .button {
+    display: block;
+    height: 50px;
+    width: 180px;
+    text-decoration: none;
+    line-height: 50px;
+    font-family: "Î¢ÈíÑÅºÚ", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #2DCB70;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding-left: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: url(allow.png) no-repeat 130px center;
+    position: relative;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+}
+.box .button:hover {
+    border: 2px solid rgba(255,255,255,1);
+    background-position: 140px center;
+}
+.box .button .line {
+    position: absolute;
+    display: block;
+    background: none;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+}
+.box .button:hover .line {
+    background: #fff;
+}
+.box .button .line-top {
+    width: 0;
+    height: 2px;
+    top: -2px;
+    left: -110%;
+}
+.box .button:hover .line-top {
+    width: 180px;
+    left: -2px;
+}
+.box .button .line-right {
+    height: 0;
+    width: 2px;
+    right: -2px;
+    top: -110%;
+}
+.box .button:hover .line-right {
+    height: 50px;
+    top: -2px;
+}
+.box .button .line-bottom {
+    height: 2px;
+    width: 0;
+    right: -110%;
+    bottom: -2px;
+}
+.box .button:hover .line-bottom {
+    width: 180px;
+    right: -2px;
+}
+.box .button .line-left {
+    height: 0;
+    width: 2px;
+    left: -2px;
+    bottom: -110%;
+}
+.box .button:hover .line-left {
+    height: 50px;
+    bottom: -2px;
+}
+.box .tip {
+    position: absolute;
+    padding: 0 14px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #2DCB70;
+    color: #fff;
+    top: 160px;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+    border-radius: 3px;
+    margin: 0 auto;
+    opacity: 1;
+}
+.box .tip em {
+    font-style: normal;
+}
+.box .tip span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top-color: #2DCB70;
+    left: 50%;
+    margin-left: -3px;
+    bottom: -14px;
+    over-flow: hidden;
+}
