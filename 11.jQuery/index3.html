@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul a {
+            text-decoration: none;
+        }
+        ul li.mian {
+            background: url("button.png") no-repeat top left;
+            float: left;
+            margin-right: 30px;
+        }
+        ul li.mian a.a1 {
+            display: block;
+            height: 49px;
+            width: 203px;
+            text-indent: -9999em;
+        }
+        ul li.mian ul{
+            background-color: white;
+            display: none;
+        }
+        ul li ul a {
+            display: block;
+            height: 30px;
+            width: 183px;
+            padding-left: 20px;
+            line-height: 30px;
+            color: black;
+        }
+    </style>
+    <script src="jquery-2.1.1.min.js"></script>
+</head>
+<body>
+    <ul>
+       <li class="mian"><a  class="a1" href="#">菜单1</a>
+            <ul>
+                <li><a href="#">子菜单1</a></li>
+                <li><a href="#">子菜单2</a></li>
+            </ul>
+       </li>
+        <li class="mian"><a  class="a1"  href="#">菜单2</a>
+            <ul>
+                <li><a href="#">子菜单1</a></li>
+                <li><a href="#">子菜单2</a></li>
+            </ul>
+        </li>
+        <li class="mian"><a  class="a1"  href="#">菜单3</a>
+            <ul>
+                <li><a href="#">子菜单1</a></li>
+                <li><a href="#">子菜单2</a></li>
+            </ul>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        function change(ef) {
+            if (ef.css("background-image").indexOf("button.png") >=0) {
+                ef.css("background-image", "url('pixy-rollover.gif')");
+            } else {
+                ef.css("background-image", "url('button.png')");
+            }
+        }
+        $(document).ready(function() {
+//            $(".mian").children("ul").slideUp();
+            $(".mian").on("mouseenter", function() {
+                $(this).children("ul").slideDown();
+                change($(this));
+            });
+            $(".mian").on("mouseleave", function() {
+                $(this).children("ul").slideUp();
+                change($(this));
+            });
+        });
+
+    </script>
+</body>
+</html>

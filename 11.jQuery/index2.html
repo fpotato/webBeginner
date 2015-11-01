@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*.div1 {*/
+            /*height: 500px;*/
+            /*width: 500px;*/
+            /*border: 3px solid salmon;*/
+        /*}*/
+        /*.div2 {*/
+            /*height: 400px;*/
+            /*width: 400px;*/
+            /*border: 3px solid salmon;*/
+            /*margin: 40px;*/
+        /*}*/
+        p {
+            height: 10px;
+            width: 300px;
+            border: 3px solid salmon;
+            margin: 40px;
+        }
+    </style>
+    <script src="jquery-2.1.1.min.js"></script>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p class="p0"></p>
+            <p></p>
+            <p></p>
+            <p class="p1"></p>
+            <p></p>
+        </div>
+    </div>
+    <script type="text/javascript">
+//        $(".div1").children().css("border-color", "blue");
+        $(document).ready(function() {
+//            $("a").parentsUntil(".div2").css("border", "3px solid blue");
+//            $(".p0").nextUntil("p1").css("border-color", "blue");
+            $(".div1").last().css("border-color", "blue");
+        });
+    </script>
+</body>
+</html>
