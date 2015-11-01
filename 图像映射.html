@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+
+        .imageMap {
+            margin: 0;
+            padding: 0;
+            width: 333px;
+            height: 500px;
+            position: relative;
+        }
+        .imageMap ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .imageMap a {
+            position: absolute;
+            display: block;
+            width: 60px;
+            height: 80px;
+            text-indent: -999em;
+            /*IE不显示内容在屏幕之外的链接*/
+            background-image: url(6/img/shim.gif);
+        }
+        .imageMap .li1 a {
+            top: 50px;
+            left: 80px;
+        }
+        .imageMap .li2 a {
+            top: 90px;
+            left: 200px;
+        }
+        .imageMap .li3 a {
+            top: 140px;
+            left: 55px;
+        }
+        .imageMap .li4 a {
+            top: 140px;
+            left: 145px;
+        }
+        .imageMap .li5 a {
+            top: 165px;
+            left: 245px;
+        }
+        .imageMap a:hover, .imageMap a:focus {
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="imageMap">
+        <img src="6/img/nerdcore.jpg" width="333" height="500" alt="Some of the Clearleft team">
+        <ul>
+            <li class="li1">
+                <a href="#" title="1">1</a>
+            </li>
+            <li class="li2">
+                <a href="#" title="2">2</a>
+            </li>
+            <li class="li3">
+                <a href="#" title="3">3</a>
+            </li>
+            <li class="li4">
+                <a href="#" title="4">4</a>
+            </li>
+            <li class="li5">
+                <a href="#" title="5">5</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

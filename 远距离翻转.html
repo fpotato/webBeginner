@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .remote {
+            width: 333px;
+            height: 500px;
+            position: relative;
+        }
+        .remote ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .remote a .hotspot {
+            display: block;
+            position: absolute;
+            width: 50px;
+            height: 60px;
+        }
+        .remote .li1 a .hotspot {
+            top: 50px;
+            left: 80px;
+        }
+        .remote .li2 a .hotspot {
+            top: 90px;
+            left: 200px;
+        }
+        .remote .li3 a .hotspot {
+            top: 140px;
+            left: 55px;
+            width: 60px;
+            height: 80px;
+        }
+        .remote .li4 a .hotspot {
+            top: 140px;
+            left: 145px;
+        }
+        .remote .li5 a .hotspot {
+            top: 165px;
+            left: 245px;
+            width: 60px;
+            height: 80px;
+        }
+        .remote a .link {
+            position: absolute;
+            display: block;
+            width: 10em;
+            right: -11em;
+            cursor: pointer;
+        }
+        .remote .li1 a .link{
+            top: 0;
+        }
+        .remote .li2 a .link {
+            top: 1.2em;
+        }
+        .remote .li3 a .link {
+            top: 2.4em;
+        }
+        .remote .li4 a .link {
+            top: 3.6em;
+        }
+        .remote .li5 a .link {
+            top: 4.8em;
+        }
+        .remote a:hover .hotspot,
+        .remote a:focus .hotspot{
+            border: 1px solid #fff;
+        }
+        .remote a:hover .link, .remote a:focus .link {
+            color: #0066ff;
+        }
+        .remote a .link {
+            font-weight: bold;
+        }
+        .remote a .link:before {
+            content: "\00BB";
+        }
+    </style>
+</head>
+<body>
+    <div class="remote">
+        <img src="6/img/nerdcore.jpg" width="333" height="500" alt="Some of the Clearleft team">
+        <ul>
+            <li class="li1">
+                <a href="#" title="1">
+                    <span class="hotspot"></span>
+                    <span class="link">1</span>
+                </a>
+            </li>
+            <li class="li2">
+                <a href="#" title="2">
+                    <span class="hotspot"></span>
+                    <span class="link">2</span>
+                </a>
+            </li>
+            <li class="li3">
+                <a href="#" title="3">
+                    <span class="hotspot"></span>
+                    <span class="link">3</span>
+                </a>
+            </li>
+            <li class="li4">
+                <a href="#" title="4">
+                    <span class="hotspot"></span>
+                    <span class="link">4</span>
+                </a>
+            </li>
+            <li class="li5">
+                <a href="#" title="5">
+                    <span class="hotspot"></span>
+                    <span class="link">5</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

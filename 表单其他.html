@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        fieldset {
+            margin: 1em 0;
+            padding: 1em;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            cursor: pointer;
+        }
+        textarea {
+            width: 100%;
+            height: 10em;
+        }
+        input {
+            width: 20em;
+        }
+        input.radio {
+            width: auto;
+        }
+        input[type="text"]:focus, textarea:focus {
+            background-color: #ffc;
+        }
+        .required {
+            font-size: 0.75em;
+            color: #760000;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Comments</legend>
+        <div>
+            <label for="text">Name:<em class="required">(required)</em></label>
+            <input id="text" name="text" type="text"/>
+        </div>
+        <div>
+            <label for="textarea">Message: </label>
+            <textarea name="textarea" id="textarea"></textarea>
+        </div>
+        <div>
+            <label for="remember-yes"><input id="remember-yes" name="remember" type="radio" class="radio" value="yes" />Yes</label>
+        </div>
+        <div>
+            <label for="remember-no"><input id="remember-no" name="remember" class="radio" type="radio" value="no"/>No</label>
+        </div>
+    </fieldset>
+</body>
+</html>

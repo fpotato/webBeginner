@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #EBE8D0 url(bg_body.gif) repeat-x left top;
+    color: #333;
+    text-align: center;
+    font: x-small georigia, serif;
+    font-size: small;
+} html>body {font-size:small;}
+#container {
+    position: relative;
+    width: 732px;
+    margin: 0 auto;
+    text-align: left;
+}
+#intro {
+    border: 1px solid #A79355;
+    border-width: 0px 1px;
+}
+h1, h2, h3 {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+h1 span, h2 span h3 span, #quickSummary p.p1 span {
+    display: none;
+}
+#pageHeader h1 {
+    height: 71px;
+    background: url(bg_zengarden.gif) no-repeat 35px 42px;
+}
+#pageHeader h2 {
+    height: 115px;
+    background: url(bg_beautyof.jpg) no-repeat left top;
+}
+#quickSummary p.p1 {
+    height: 76px;
+    margin: 0;
+    background: url(bg_quicksum.gif) no-repeat 35px 18px;
+}
+#quickSummary p.p2 {
+    position: absolute;
+    top: 78px;
+    right: 35px;
+    width: 200px;
+    margin: 0;
+    font-size: 93%;
+    text-align: right;
+    line-height: 1.3em;
+    color: #A79355;
+    background-color: transparent;
+}
+#quickSummary p.p2 a:link, #quickSummary p.p2 a:visited {
+    white-space: nowrap;
+    font: bold 92%/1.3em Verdana, Arial, Sans-serif;
+    text-transform: uppercase;
+}
+#preamble {
+    position: absolute;
+    top: 304px;
+    right: 0;
+    width: 180px;
+}
+#preamble h3 {
+    height: 44px;
+    background-image: url(bg_road.gif);
+}
+#preamble p {
+    margin: 5em 0;
+    font-size: 93%;
+    font-style: italic;
+    line-height: 1.7em;
+    color: #66472E;
+    background-color: transparent;
+
+}
+#preamble h3 span {
+    display: none;
+}
+#supportingText {
+    margin: 0 200px;
+    border: 1px solid #A79355;
+    border-width: 0 1px;
+    padding-bottom: 8px;
+    border-bottom: 8px solid #BDAF83;
+}
+#supportingText p {
+    margin: 75px 0;
+    line-height: 1.5em;
+    padding:0 20px;
+
+}
+#supportingText h3 {
+    height: 40px;
+    border: 1px solid #A79355;
+    border-width: 1px 0;
+    margin: 1em 0.5em;
+    background-color: #D9D98B;
+}
+#explanation h3 {
+    height:80px;
+    background-image:url("bg_what.jpg");
+    border-top-width:0;
+    margin:0 0 10px;
+}
+#participation h3 {
+    background-image:url("bg_participation.jpg");
+}
+#benefits h3 {
+    background-image:url("bg_benefits.jpg");
+}
+#requirements h3 {
+    background-image:url("bg_requirements.jpg");
+}
+

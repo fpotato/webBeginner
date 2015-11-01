@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div {
+            border: 1px solid yellow;
+            /*float: left;*/
+            /*overflow: hidden;  /!*auto||hidden*!/*/
+        }
+        #p1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
+        #p2 {
+            float: right;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        #p2:after {
+            content: ".";
+            height: 0;
+            visibility: hidden;
+            display: block;
+            clear: both;
+        }
+        /*div .div1 {*/
+            /*clear: both;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    1在最后添加空元素 ，并清理它
+    2浮动div元素 有缺点
+    3div元素overflow属性
+    4:after在现有内容后添加
+    <div>
+        <p id="p1">在世界的边缘中</p>
+        <p id="p2">在家乡的世界里</p>
+        <!--<div class="clear"></div>-->
+        <!--<div class="div1"></div>-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件处理演示</title>
+</head>
+<body>
+    <button id="btn1">DOM0级处理</button>
+    <button id="btn2">DOM2级处理</button>
+    <button id="btn3">小于等于IE8的事件处理</button>
+    <button id="btn4">自动选择处理</button>
+    <script>
+        var btn1 = document.getElementById("btn1");
+        btn1.onclick = function(){alert("DOM0级处理1")};  //此事件被覆盖
+//        btn1.onclick = dom0();
+//        function dom0(){
+//            alert("DOM0级处理2");
+//        }                                这是错误的写法
+        btn1.onclick = function(){
+            alert("DOM0级处理3");
+        };
+
+        var btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click",function(){alert("DOM2级处理1")});
+        btn2.addEventListener("click",function(){alert("DOM2级处理2")});
+        btn2.addEventListener("click",dom2);
+        function dom2(){
+            alert("DOM2级处理3");
+        }
+        btn2.removeEventListener("click",dom2);
+
+//        var btn3 = document.getElementById("btn3");
+//        btn3.attachEvent("onclick",dd);
+//        function dd(){
+//            alert("IE下DOM2级处理");
+//        }
+//        btn3.detach("onclick",dd);
+
+        var btn4 = document.getElementById("btn4");
+        if (btn4.addEventListener){
+            btn4.addEventListener("click",btn4demo);
+        }else if (btn4.attachEvent){
+            btn4.attachEvent("onclick",btn4demo);
+        }else {
+            btn4.onclick = btn4demo();
+        }
+        function btn4demo(){
+            alert("自动处理");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font: 9px/17px georgia;
+    color: #555753;
+    background: white url(zen-bg.jpg) no-repeat top left;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    font: 9px/17px georgia;
+    text-align: justify;
+    margin-top: 0px;
+}
+h3 {
+    font: italic  12pt georgia;
+    color: #7D775C;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+a:link {
+    font-weight: bold;
+    color: #B7A5DF;
+    text-decoration: none;
+}
+a:visited {
+    font-weight: bold;
+    color: #D4CDDC;
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+    color: #9685BA;
+}
+abbr {
+    border-bottom: none;
+}
+#container {
+    background: url(blossoms.jpg) no-repeat bottom right;
+    margin: 0px;
+    padding: 0px 175px 0px 110px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+#intro {
+    min-width: 470px;
+}
+#pageHeader {
+    margin-bottom: 20px;
+}
+#pageHeader h1 {
+    background: url(h1.gif) no-repeat top left;
+    margin-top: 10px;
+    height: 87px;
+    width: 219px;
+    float: left;
+}
+#pageHeader h1 span {
+    display: none;
+}
+#pageHeader h2 {
+    background: url(h2.gif) no-repeat top left;
+    margin-top: 58px;
+    margin-bottom: 40px;
+    height: 18px;
+    width: 200px;
+    float: right;
+}
+#pageHeader h2 span {
+    display: none;
+}
+#quickSummary {
+    clear: both;
+    width: 160px;
+    float: left;
+    margin: 20px 20px 20px 10px;
+}
+#quickSummary p {
+    font: italic 10pt/22pt georgia;
+    text-align: center;
+}
+#preamble {
+    clear: right;
+    padding: 0px 10px 0px 10px;
+}
+#supportingText {
+    padding-left: 10px;
+    margin-bottom: 40px;
+}
+#footer {
+    text-align: center;
+}
+#footer a:link, #footer a:visited {
+    margin-right: 20px;
+}
+
+#linkList {
+    margin-left: 600px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#linkList2 {
+    font: 10px verdana, sans-serif;
+    background: transparent url(paper-bg.jpg) repeat-y top left;
+    margin-top: 150px;
+    padding: 10px;
+    width: 130px;
+}
+#linkList h3.select {
+    background: transparent url(h3.gif) no-repeat top left;
+    margin: 10px 0px 5px 0px;
+    width: 97px;
+    height: 16px;
+}
+#linkList h3.select span {
+    display: none;
+}
+#linkList h3.archives {
+    background: transparent url(h5.gif) no-repeat top left;
+    margin: 25px 0px 5px 0px;
+    width:57px;
+    height: 14px;
+}
+#linkList h3.archives span {
+    display: none;
+}
+#linkList h3.resources {
+    background: transparent url(h6.gif) no-repeat top left;
+    margin: 25px 0px 5px 0px;
+    width: 63px;
+    height: 10px;
+}
+#linkList h3.resources span {
+    display: none;
+}
+#linkList ul {
+    margin: 0px;
+    padding: 0px;
+}
+#linkList li {
+    line-height: 2.5ex;
+    background: transparent url(cr1.gif) no-repeat top center;
+    display: block;
+    list-style-type: none;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+#linkList li a:link {
+    color: #988F5E;
+}
+#linkList li a:visited {
+    color: #B3AE94;
+}
+

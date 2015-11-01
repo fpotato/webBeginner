@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        ol.nav {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        ol.nav li {
+            float: left;
+            margin-right: 0.6em;
+        }
+        ol.nav a, ol.nav li.selected  {
+            display: block;
+            padding: 0.2em 0.5em;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        ol.nav a:hover, ol.nav a:focus, ol.nav li.selected {
+            background-color: black;
+            color: white;
+        }
+        ol.nav a[rel="prev"], ol.nav a[rel="next"] {
+            border: none;
+        }
+        ol.nav a[rel="prev"]:before {
+            content: "\00AB";
+            padding-right: 0.5em;
+        }
+        ol.nav a[rel="next"]:after {
+            content: "\00BB";
+            padding-left: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <ol class="nav">
+        <li><a href="#" rel="prev">Prev</a></li>
+        <li><a href="#">1</a></li>
+        <li class="selected">2</li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#" rel="next">Next</a></li>
+    </ol>
+</body>
+</html>

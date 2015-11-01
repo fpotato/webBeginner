@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .imageMap {
+            width: 333px;
+            height: 500px;
+            position: relative;
+        }
+        .imageMap ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .imageMap a {
+            position: absolute;
+            display: block;
+            background: url(6/img/shim.gif);
+            color: #000;
+            text-decoration: none;
+            border: 1px solid transparent;
+        }
+        .imageMap a .outer {
+            display: block;
+            border: 1px solid transparent;
+        }
+        .imageMap a .inner {
+            display: block;
+            border: 1px solid transparent;
+            width: 50px;
+            height: 60px;
+        }
+        .imageMap .li1 a {
+            top: 50px;
+            left: 80px;
+        }
+        .imageMap .li2 a {
+            top: 90px;
+            left: 200px;
+        }
+        .imageMap .li3 a {
+            top: 140px;
+            left: 55px;
+        }
+        .imageMap .li4 a {
+            top: 140px;
+            left: 145px;
+        }
+        .imageMap .li5 a {
+            top: 165px;
+            left: 245px;
+        }
+        .imageMap a:hover, .imageMap a:focus {
+            border-color: #d4d82d;
+        }
+        .imageMap a .note {
+            display: block;
+            position: absolute;
+            bottom: -2em;
+            width: 7em;
+            padding: 0.2em 0.5em;
+            background: #ffc;
+            text-align: center;
+            left: -999em;
+            margin-left: -4em;
+        }
+        .imageMap a:hover .note, .imageMap a:focus .note {
+            left: 25px;
+            z-index: 10;
+        }
+        .imageMap:hover .outer, .imageMap:focus .outer
+        /*.imageMap a:hover .outer, .imageMap a:focus .outer*/
+        {
+            border-color: #000;
+        }
+        .imageMap:hover .inner, .imageMap:focus .inner
+        /*.imageMap a:hover .inner, .imageMap a:focus .inner*/
+        {
+            border-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="imageMap">
+        <img src="6/img/nerdcore.jpg" width="333" height="500" alt="Some of the Clearleft team">
+        <ul>
+            <li class="li1">
+                <a href="#">
+                    <span class="outer">
+                        <span class="inner">
+                            <span class="note">1</span>
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li class="li2">
+                <a href="#">
+                       <span class="outer">
+                        <span class="inner">
+                            <span class="note">2</span>
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li class="li3">
+                <a href="#">
+                       <span class="outer">
+                        <span class="inner">
+                            <span class="note">3</span>
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li class="li4">
+                <a href="#">
+                       <span class="outer">
+                        <span class="inner">
+                            <span class="note">4</span>
+                        </span>
+                    </span>
+                </a>
+            </li>
+            <li class="li5">
+                <a href="#">
+                       <span class="outer">
+                        <span class="inner">
+                            <span class="note">5</span>
+                        </span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
